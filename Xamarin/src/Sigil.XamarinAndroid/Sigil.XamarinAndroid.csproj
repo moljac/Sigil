@@ -1,0 +1,532 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{C272F1BD-BE8B-4429-B8FE-BD2D0150D10F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Sigil.Xamarin</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Sigil.Xamarin</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HolisticWare.System.Data.DataSetExtensions">
+      <HintPath>..\..\..packages\HolisticWare.System.Data.DataSetExtensions.0.0.1-alpha-20159592-2252\lib\MonoAndroid10\HolisticWare.System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Sigil\CatchBlock.cs">
+      <Link>CatchBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\DisassembledOperations.cs">
+      <Link>DisassembledOperations.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Disassembler.cs">
+      <Link>Disassembler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.ArgumentList.cs">
+      <Link>Emit.ArgumentList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Arithmetic.cs">
+      <Link>Emit.Arithmetic.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Bitwise.cs">
+      <Link>Emit.Bitwise.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Box.cs">
+      <Link>Emit.Box.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Branch.cs">
+      <Link>Emit.Branch.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Break.cs">
+      <Link>Emit.Break.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Call.cs">
+      <Link>Emit.Call.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.CallIndirect.cs">
+      <Link>Emit.CallIndirect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.CallVirtual.cs">
+      <Link>Emit.CallVirtual.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.CastClass.cs">
+      <Link>Emit.CastClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.CheckFinite.cs">
+      <Link>Emit.CheckFinite.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Compare.cs">
+      <Link>Emit.Compare.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Convert.cs">
+      <Link>Emit.Convert.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.CopyBlock.cs">
+      <Link>Emit.CopyBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.CopyObject.cs">
+      <Link>Emit.CopyObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.cs">
+      <Link>Emit.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Duplicate.cs">
+      <Link>Emit.Duplicate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.InitializeBlock.cs">
+      <Link>Emit.InitializeBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.InitializeObject.cs">
+      <Link>Emit.InitializeObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.IsInstance.cs">
+      <Link>Emit.IsInstance.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Jump.cs">
+      <Link>Emit.Jump.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Labels.cs">
+      <Link>Emit.Labels.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Leave.cs">
+      <Link>Emit.Leave.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadArgument.cs">
+      <Link>Emit.LoadArgument.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadArgumentAddress.cs">
+      <Link>Emit.LoadArgumentAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadConstant.cs">
+      <Link>Emit.LoadConstant.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadElement.cs">
+      <Link>Emit.LoadElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadElementAddress.cs">
+      <Link>Emit.LoadElementAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadField.cs">
+      <Link>Emit.LoadField.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadFieldAddress.cs">
+      <Link>Emit.LoadFieldAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadFunctionPointer.cs">
+      <Link>Emit.LoadFunctionPointer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadIndirect.cs">
+      <Link>Emit.LoadIndirect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadLength.cs">
+      <Link>Emit.LoadLength.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadLocal.cs">
+      <Link>Emit.LoadLocal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadLocalAddress.cs">
+      <Link>Emit.LoadLocalAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadObject.cs">
+      <Link>Emit.LoadObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LoadVirtualFunctionPointer.cs">
+      <Link>Emit.LoadVirtualFunctionPointer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.LocalAllocate.cs">
+      <Link>Emit.LocalAllocate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Locals.cs">
+      <Link>Emit.Locals.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.MakeReferenceAny.cs">
+      <Link>Emit.MakeReferenceAny.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.NewArray.cs">
+      <Link>Emit.NewArray.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.NewObject.cs">
+      <Link>Emit.NewObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Nop.cs">
+      <Link>Emit.Nop.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Pop.cs">
+      <Link>Emit.Pop.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.ReferenceAnyType.cs">
+      <Link>Emit.ReferenceAnyType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.ReferenceAnyValue.cs">
+      <Link>Emit.ReferenceAnyValue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.ReThrow.cs">
+      <Link>Emit.ReThrow.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Return.cs">
+      <Link>Emit.Return.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.SizeOf.cs">
+      <Link>Emit.SizeOf.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.StoreArgument.cs">
+      <Link>Emit.StoreArgument.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.StoreElement.cs">
+      <Link>Emit.StoreElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.StoreField.cs">
+      <Link>Emit.StoreField.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.StoreIndirect.cs">
+      <Link>Emit.StoreIndirect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.StoreLocal.cs">
+      <Link>Emit.StoreLocal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.StoreObject.cs">
+      <Link>Emit.StoreObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Switch.cs">
+      <Link>Emit.Switch.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Throw.cs">
+      <Link>Emit.Throw.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.TryCatchFinally.cs">
+      <Link>Emit.TryCatchFinally.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Unbox.cs">
+      <Link>Emit.Unbox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.Validate.cs">
+      <Link>Emit.Validate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Emit.WriteLine.cs">
+      <Link>Emit.WriteLine.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\EmitShorthand.cs">
+      <Link>EmitShorthand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\ExceptionBlock.cs">
+      <Link>ExceptionBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\FinallyBlock.cs">
+      <Link>FinallyBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\AutoNamer.cs">
+      <Link>Impl\AutoNamer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\BufferedILGenerator.cs">
+      <Link>Impl\BufferedILGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\Delegates.cs">
+      <Link>Impl\Delegates.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\ExtensionMethods.cs">
+      <Link>Impl\ExtensionMethods.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\InstructionAndTransitions.cs">
+      <Link>Impl\InstructionAndTransitions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\InstructionSize.cs">
+      <Link>Impl\InstructionSize.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\IOwned.cs">
+      <Link>Impl\IOwned.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\LinqAlternative.Collections.cs">
+      <Link>Impl\LinqAlternative.Collections.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\LinqAlternative.cs">
+      <Link>Impl\LinqAlternative.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\LinqAlternative.Delegates.cs">
+      <Link>Impl\LinqAlternative.Delegates.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\NonGenericPlaceholderDelegate.cs">
+      <Link>Impl\NonGenericPlaceholderDelegate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\PrefixTracker.cs">
+      <Link>Impl\PrefixTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\ReturnTracer.cs">
+      <Link>Impl\ReturnTracer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\RollingVerifier.cs">
+      <Link>Impl\RollingVerifier.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\RollingVerifier.NoVerification.cs">
+      <Link>Impl\RollingVerifier.NoVerification.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\SigilTuple.cs">
+      <Link>Impl\SigilTuple.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\SpecialTypes.cs">
+      <Link>Impl\SpecialTypes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\StackTransition.cs">
+      <Link>Impl\StackTransition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\TransitionWrapper.cs">
+      <Link>Impl\TransitionWrapper.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\TypeOnStack.cs">
+      <Link>Impl\TypeOnStack.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\VerifiableTracker.cs">
+      <Link>Impl\VerifiableTracker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Impl\VerificationResult.cs">
+      <Link>Impl\VerificationResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Label.cs">
+      <Link>Label.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\LabelLookup.cs">
+      <Link>LabelLookup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Local.cs">
+      <Link>Local.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\LocalLookup.cs">
+      <Link>LocalLookup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.ArgumentList.cs">
+      <Link>NonGeneric\Emit.ArgumentList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Arithmetic.cs">
+      <Link>NonGeneric\Emit.Arithmetic.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Bitwise.cs">
+      <Link>NonGeneric\Emit.Bitwise.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Box.cs">
+      <Link>NonGeneric\Emit.Box.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Branch.cs">
+      <Link>NonGeneric\Emit.Branch.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Break.cs">
+      <Link>NonGeneric\Emit.Break.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Call.cs">
+      <Link>NonGeneric\Emit.Call.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.CallIndirect.cs">
+      <Link>NonGeneric\Emit.CallIndirect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.CallVirtual.cs">
+      <Link>NonGeneric\Emit.CallVirtual.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.CastClass.cs">
+      <Link>NonGeneric\Emit.CastClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.CheckFinite.cs">
+      <Link>NonGeneric\Emit.CheckFinite.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Compare.cs">
+      <Link>NonGeneric\Emit.Compare.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Convert.cs">
+      <Link>NonGeneric\Emit.Convert.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.CopyBlock.cs">
+      <Link>NonGeneric\Emit.CopyBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.CopyObject.cs">
+      <Link>NonGeneric\Emit.CopyObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.cs">
+      <Link>NonGeneric\Emit.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Duplicate.cs">
+      <Link>NonGeneric\Emit.Duplicate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.InitializeBlock.cs">
+      <Link>NonGeneric\Emit.InitializeBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.InitializeObject.cs">
+      <Link>NonGeneric\Emit.InitializeObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.IsInstance.cs">
+      <Link>NonGeneric\Emit.IsInstance.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Jump.cs">
+      <Link>NonGeneric\Emit.Jump.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Labels.cs">
+      <Link>NonGeneric\Emit.Labels.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Leave.cs">
+      <Link>NonGeneric\Emit.Leave.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadArgument.cs">
+      <Link>NonGeneric\Emit.LoadArgument.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadArgumentAddress.cs">
+      <Link>NonGeneric\Emit.LoadArgumentAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadConstant.cs">
+      <Link>NonGeneric\Emit.LoadConstant.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadElement.cs">
+      <Link>NonGeneric\Emit.LoadElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadElementAddress.cs">
+      <Link>NonGeneric\Emit.LoadElementAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadField.cs">
+      <Link>NonGeneric\Emit.LoadField.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadFieldAddress.cs">
+      <Link>NonGeneric\Emit.LoadFieldAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadFunctionPointer.cs">
+      <Link>NonGeneric\Emit.LoadFunctionPointer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadIndirect.cs">
+      <Link>NonGeneric\Emit.LoadIndirect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadLength.cs">
+      <Link>NonGeneric\Emit.LoadLength.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadLocal.cs">
+      <Link>NonGeneric\Emit.LoadLocal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadLocalAddress.cs">
+      <Link>NonGeneric\Emit.LoadLocalAddress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadObject.cs">
+      <Link>NonGeneric\Emit.LoadObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LoadVirtualFunctionPointer.cs">
+      <Link>NonGeneric\Emit.LoadVirtualFunctionPointer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.LocalAllocate.cs">
+      <Link>NonGeneric\Emit.LocalAllocate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Locals.cs">
+      <Link>NonGeneric\Emit.Locals.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.MakeReferenceAny.cs">
+      <Link>NonGeneric\Emit.MakeReferenceAny.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.NewArray.cs">
+      <Link>NonGeneric\Emit.NewArray.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.NewObject.cs">
+      <Link>NonGeneric\Emit.NewObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Nop.cs">
+      <Link>NonGeneric\Emit.Nop.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Pop.cs">
+      <Link>NonGeneric\Emit.Pop.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.ReferenceAnyType.cs">
+      <Link>NonGeneric\Emit.ReferenceAnyType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.ReferenceAnyValue.cs">
+      <Link>NonGeneric\Emit.ReferenceAnyValue.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.ReThrow.cs">
+      <Link>NonGeneric\Emit.ReThrow.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Return.cs">
+      <Link>NonGeneric\Emit.Return.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.SizeOf.cs">
+      <Link>NonGeneric\Emit.SizeOf.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.StoreArgument.cs">
+      <Link>NonGeneric\Emit.StoreArgument.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.StoreElement.cs">
+      <Link>NonGeneric\Emit.StoreElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.StoreField.cs">
+      <Link>NonGeneric\Emit.StoreField.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.StoreIndirect.cs">
+      <Link>NonGeneric\Emit.StoreIndirect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.StoreLocal.cs">
+      <Link>NonGeneric\Emit.StoreLocal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.StoreObject.cs">
+      <Link>NonGeneric\Emit.StoreObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Switch.cs">
+      <Link>NonGeneric\Emit.Switch.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Throw.cs">
+      <Link>NonGeneric\Emit.Throw.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.TryCatchFinally.cs">
+      <Link>NonGeneric\Emit.TryCatchFinally.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.Unbox.cs">
+      <Link>NonGeneric\Emit.Unbox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\Emit.WriteLine.cs">
+      <Link>NonGeneric\Emit.WriteLine.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\NonGeneric\EmitShorthand.cs">
+      <Link>NonGeneric\EmitShorthand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Operation.cs">
+      <Link>Operation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\OperationResultUsage.cs">
+      <Link>OperationResultUsage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\OptimizationOptions.cs">
+      <Link>OptimizationOptions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\Parameter.cs">
+      <Link>Parameter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\Sigil\SigilVerificationException.cs">
+      <Link>SigilVerificationException.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+</Project>

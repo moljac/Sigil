@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6882AA0F-683A-4660-BF39-F9F00CC351DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigil.XamarinAndroid", "src\Sigil.XamarinAndroid\Sigil.XamarinAndroid.csproj", "{C272F1BD-BE8B-4429-B8FE-BD2D0150D10F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F0C3B07C-A7E1-48AA-911B-35CE49323A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigil.XamarinAndroid.UnitTests", "tests\Sigil.XamarinAndroid.UnitTests\Sigil.XamarinAndroid.UnitTests.csproj", "{938A80BF-FE74-4CC2-8BD2-BF788D7E6B1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{73798C80-EB18-442B-9ACD-56A863B942E4}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sigil-original", "Sigil-original", "{C7A76BAE-2C5D-4724-8CD0-CB372979F018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigilTests", "..\SigilTests\SigilTests.csproj", "{53266E21-FEBB-4155-9937-75B909134D5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{25AC0632-9E7C-4455-A577-13B95D1D9B45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53266E21-FEBB-4155-9937-75B909134D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53266E21-FEBB-4155-9937-75B909134D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53266E21-FEBB-4155-9937-75B909134D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53266E21-FEBB-4155-9937-75B909134D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938A80BF-FE74-4CC2-8BD2-BF788D7E6B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938A80BF-FE74-4CC2-8BD2-BF788D7E6B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938A80BF-FE74-4CC2-8BD2-BF788D7E6B1F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{938A80BF-FE74-4CC2-8BD2-BF788D7E6B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938A80BF-FE74-4CC2-8BD2-BF788D7E6B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938A80BF-FE74-4CC2-8BD2-BF788D7E6B1F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C272F1BD-BE8B-4429-B8FE-BD2D0150D10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C272F1BD-BE8B-4429-B8FE-BD2D0150D10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C272F1BD-BE8B-4429-B8FE-BD2D0150D10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C272F1BD-BE8B-4429-B8FE-BD2D0150D10F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C272F1BD-BE8B-4429-B8FE-BD2D0150D10F} = {6882AA0F-683A-4660-BF39-F9F00CC351DD}
+		{938A80BF-FE74-4CC2-8BD2-BF788D7E6B1F} = {F0C3B07C-A7E1-48AA-911B-35CE49323A36}
+		{53266E21-FEBB-4155-9937-75B909134D5E} = {C7A76BAE-2C5D-4724-8CD0-CB372979F018}
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

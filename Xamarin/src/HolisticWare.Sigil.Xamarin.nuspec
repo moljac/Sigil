@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="2.8.1">
+		<id>
+			HolisticWare.Sigil.Xamarin
+		</id>
+		<!--
+		SemVer - Semantic Versioning
+		http://semver.org/
+		-->
+		<version>
+			0.0.1-alpha-20150507-1100
+		</version>
+		<title>
+			Holisticware.Sigil.Xamarin
+		</title>
+		<authors>
+			moljac - Miljenko Cvjetko
+		</authors>
+		<owners>
+			HolisticWare, moljac - Miljenko Cvjetko
+		</owners>
+		<licenseUrl>
+			https://github.com/moljac/Sigil/blob/master/LICENCE
+		</licenseUrl>
+		<projectUrl>
+			https://github.com/moljac/Sigil
+		</projectUrl>
+		<iconUrl>
+			http://refractored.com/images/pcl_settings_icon.png
+		</iconUrl>
+		<requireLicenseAcceptance>
+			false
+		</requireLicenseAcceptance>
+		<description>
+			Holisticware.Sigil.Xamarin
+			
+			Sigil package for Xamarin.Android 
+			NOTE: Xamarin.IOS not supported because of System.Reflection.Emit
+			needed by some libraries like (JIL JSON serialization)
+		</description>
+		<summary>
+			Sigil.Xamarin for 
+				Xamarin.Android,
+		</summary>
+		<tags>
+			xamarin, 
+			android, monoandroid, monodroid,
+		</tags>
+		<dependencies>
+			<!-- 
+			-->
+			<dependency id="HolisticWare.System.Data.DataSetExtensions" version="0.0.1" />
+		</dependencies>
+	</metadata>
+	<files>
+		<!--
+			Core - Portable
+		<file 
+			src="Sigil.Xamarin.Portable\bin\Release\Sigil.Xamarin.dll" 
+			target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+XamarinIOS10\Sigil.Xamarin.dll"
+			>
+		</file>
+		-->
+
+		<!--
+			Windows Phone 8 Silverlight
+		<file 
+			src="Sigil.Xamarin.Portable\bin\Release\Sigil.Xamarin.dll" 
+			target="lib\wp8\Sigil.Xamarin.dll"
+			>
+		</file>
+		-->
+
+		<!--
+			Windows Phone 8.1
+		<file
+			src="Sigil.Xamarin.Portable\bin\Release\Sigil.Xamarin.dll" 
+			target="lib\wpa81\Sigil.Xamarin.dll"
+			>
+		</file>
+		-->
+
+		<!--
+			Windows Store
+		<file
+			src="Sigil.Xamarin.Portable\bin\Release\Sigil.Xamarin.dll" 
+			target="lib\win8\Sigil.Xamarin.dll"
+			>
+		</file>
+		-->
+		
+		<!--
+			Xamarin.Android
+		-->
+		<file 
+			src="Sigil.XamarinAndroid\bin\Release\Sigil.Xamarin.dll" 
+			target="lib\MonoAndroid10\Sigil.Xamarin.dll"
+			>
+		</file>
+
+		<!--
+			Xamarin.iOS
+				Unified
+			NOTE: NOT SUPPORTED - System.Reflection.Emit Restriction
+		<file
+			src="Sigil.Xamarin.XamarinIOS\bin\iPhone\Release\Sigil.Xamarin.dll" 
+			target="lib\Xamarin.iOS10\Sigil.Xamarin.dll" 
+			>
+		</file>
+		-->
+
+		<!--
+			Xamarin.iOS 
+				Classic
+			NOTE: NOT SUPPORTED - System.Reflection.Emit Restriction
+		<file 
+			src="Sigil.Xamarin.XamarinIOS-Classic\bin\iPhone\Release\Sigil.Xamarin.dll" 
+			target="lib\MonoTouch10\Sigil.Xamarin.dll"
+			>
+		</file>
+		-->
+
+	</files>
+</package>
